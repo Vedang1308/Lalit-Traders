@@ -1,0 +1,522 @@
+        .orange-text {
+            color: rgb(255, 255, 255);
+        }
+                
+        .navbar-logo {
+            max-height: 40px;
+            margin-right: 10px;
+        }
+
+        
+        .navbar-dark .navbar-brand,
+        .navbar-dark .navbar-nav .nav-link {
+        color: #000 !important;     
+        }
+
+        .navbar-dark .navbar-nav .nav-item {
+            margin-right: 15px;
+        }
+        
+        .navbar-nav .nav-link {
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .navbar-nav .nav-link:hover {
+            transform: scale(1.02);
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            z-index: 1000; /* Ensure the navbar is on top of other elements */
+        }
+        
+        /* Add padding to the body to prevent content from being hidden behind the navbar */
+        body {
+            padding-top: 65px; /* Adjust the value based on your navbar's height */
+            background-color:rgb(255, 255, 255);
+        }
+
+        
+        .page-header {
+            position: relative;
+            height: 600px;
+            background: url('images/homepage.webp') center/cover;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.600);
+        }
+
+        .container.header-content {
+            opacity: 0;
+            transform: translateY(10px);
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+        
+        /* Define the fade-in animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .custom-img {
+            height: 200px; /* Adjust the height as needed */
+            object-fit: cover;
+        }
+
+        .page-header1 {
+            position: relative;
+            height: 300px;
+            background: url('images/contact_us_2.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-align: left;
+        }
+
+        .header-overlay1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.500);
+        }
+
+        .page-header2 {
+            position: relative;
+            height: 300px;
+            background: url('images/about_us.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-align: left;
+        }
+
+        .header-overlay2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.400);
+        }
+
+        .page-header3 {
+            position: relative;
+            height: 300px;
+            background: url('images/our_products.png') center/cover;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-align: left;
+        }
+
+        .header-overlay3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.500);
+        }
+
+        .header-content {
+            z-index: 1;
+        }
+
+        /* Increase Font Size */
+        .header-content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .header-content p {
+            font-size: 1.5em;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+            text-align: left;
+        }
+
+        /* Widget Section Styles */
+        .widget-section {
+            background-color: #f8f9fa;
+            padding: 30px 0;
+            text-align: left;
+        }
+
+        .widget {
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+
+        .widget h3 {
+            color: #ffffff;
+        }
+
+        /* Follow Us Widget Styles */
+        .follow-us-icons a {
+            margin: 0 10px;
+            font-size: 24px;
+            color: #ffffff;
+        }
+
+        /* Footer Logo Styles */
+        .footer-logo {
+            max-height: 40px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        /* Footer Section Styles */
+        .footer-section {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Widget Section Styles */
+        .widget-section {
+            background-color: #000000;
+            color: #ffffff;
+        }
+
+        /* Links in Quick Links Widget */
+        .widget a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        /* Change color to blue on hover */
+        .widget a:hover {
+            color: #e67817;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        
+        /*Product Card Styles*/
+        .product-card {
+            height: 100%;
+            position: relative;
+            overflow: hidden;
+            /* opacity: 0; */
+        } 
+
+        .product-card.in-viewport {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-card .card-img-top {
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .product-card:hover .card-img-top {
+            transform: scale(1.05);
+        } 
+        
+        .product-card:hover .card-img-overlay {
+            opacity: 1;
+        }
+        
+        .card-img-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for the desired transparency */
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 1;
+        }
+        
+        .product-card img {
+            object-fit: cover;
+            height: 200px; /* Adjust the height as needed for your design */
+        }
+
+        /* Add your product details styles here */
+        .product-details {
+            margin-top: -8px;
+            margin-bottom: -300px;
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: 300px;
+            width: 1000px;
+        }
+
+        .product-image-container {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 69%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container {
+            max-height: 90%;
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: auto;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        /* Add your product details styles here */
+        .product-details2 {
+            margin-top: -8px;
+            margin-bottom: -324px;
+        }
+
+        .product-image2 {
+            max-width: 100%;
+            height: 300px;
+            width: 1000px;
+        }
+
+        .product-image-container2 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 69%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container2 {
+            max-height: 89%;
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery2 {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image2 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: auto;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active2 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        /* Add your product details styles here */
+        .product-details3 {
+            margin-top: -8px;
+            margin-bottom: -172px;
+        }
+
+        .product-image3 {
+            max-width: 100%;
+            height: 400px;
+            width: 1000px;
+            border-radius: 3%;
+        }
+
+        .product-image-container3 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 69%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container3 {
+            max-height: 93.5%;
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery3 {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image3 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: auto;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active3 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        /* Add your product details styles here */
+        .product-details4 {
+            margin-top: -8px;
+            margin-bottom: -244px;
+        }
+
+        .product-image4 {
+            max-width: 100%;
+            height: 300px;
+            width: 1000px;
+        }
+
+        .product-image-container4 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 69%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container4 {
+            max-height: 89%;
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery4 {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image4 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: auto;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active4 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        /* Add your product details styles here */
+        .product-details5 {
+            margin-top: -8px;
+            margin-bottom: -292px;
+        }
+
+        .product-image5 {
+            max-width: 100%;
+            height: 300px;
+            width: 1000px;
+        }
+
+        .product-image-container5 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 69%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container5 {
+            max-height: 93%;
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery5 {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image5 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: auto;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active5 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        /* Add your product details styles here */
+        .product-details6 {
+            margin-top: -8px;
+            margin-bottom: -55px;
+        }
+
+        .product-image6 {
+            max-width: 100%;
+            height: 400px;
+            width: 1000px;
+            border-radius: 3%;
+        }
+
+        .product-image-container6 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 79%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container6 {
+            max-height: 89%;
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery6 {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image6 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: auto;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active6 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }

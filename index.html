@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Lalit Traders®</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Include Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Ju0o2wWpTl9LTY3ihr3FyK/6R2RZlQzS06dnT1BvJNXjJ0yaKFiHhD2lZdQFt21ntcXsjF8N78naN9M9LFVz3w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/icon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <!-- Add the chat bubble here -->
+    <div class="col-md-6">
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div class="elfsight-app-b997a4c7-e568-4a4c-a933-82143ef6ad26" data-elfsight-app-lazy></div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/icon.png" alt="Lalit Traders Logo" class="navbar-logo">
+                <span class="align-middle">LALIT TRADERS®</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: black;">☰</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faqs.html">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Search Bar -->
+            <form class="d-flex" id="searchForm">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+                <button class="btn btn-outline-dark" type="button" onclick="searchFunction()">Search</button>
+            </form>
+            
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header searchable-section">
+        <div class="header-overlay"></div>
+        <div class="container header-content">
+            <h1>Welcome to <span class="orange-text">Lalit Traders</span>®</h1>
+            <p>Your source for high-quality Construction products.</p>
+        </div>
+    </div>
+
+
+
+
+    <!-- Products Section -->
+    <div class="container mt-5 searchable-section" style="position: relative;">
+        <h2 class="text-center mb-4">Featured Products</h2>
+
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <!-- Product Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- Product Card 1 -->
+                        <div class="col-md-4 mb-4">
+                            <div class="card">
+                                <img src="images/Fiber Cement Board Images/fiber_cement_board_main.jpeg" class="card-img-top" alt="Product 1" style="height: 200px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fiber Cement Board</h5>
+                                    <p>Unleash Strength, Embrace Elegance: Fiber Cement Excellence.</p>
+                                    <hr>
+                                    <div style="text-align: center;">
+                                        <a href="products.html" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 2 -->
+                        <div class="col-md-4 mb-4 d-none d-md-block">
+                            <div class="card">
+                                <img src="images/Asbestos Cement Sheet/asbestos_cement_sheet_main.jpg" class="card-img-top" alt="Product 2" style="height: 200px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Asbestos Cement Sheet</h5>
+                                    <p>Asbestos Cement Sheets, Where Strength Meets Timeless Charm.</p>
+                                    <hr>
+                                    <div style="text-align: center;">
+                                        <a href="products.html" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 3 -->
+                        <div class="col-md-4 mb-4 d-none d-md-block">
+                            <div class="card">
+                                <img src="images/Cement Texture Board/cement_texture_board_main.jpg" class="card-img-top" alt="Product 3" style="height: 200px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cement Texture Board</h5>
+                                    <p>Elevate design with Cement Texture Boards, where innovation meets style.</p>
+                                    <hr>
+                                    <div style="text-align: center;">
+                                        <a href="products.html" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- Product Card 4 -->
+                        <div class="col-md-4 mb-4 d-none d-md-block">
+                            <div class="card">
+                                <img src="images/our_products.webp" class="card-img-top" alt="Product 4" style="height: 200px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Roofing Sheet</h5>
+                                    <p>Reach New Heights with Roofing Sheets: Elevating Protection, Defining Style.</p>
+                                    <hr>
+                                    <div style="text-align: center;">
+                                        <a href="products.html" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 5 -->
+                        <div class="col-md-4 mb-4 d-none d-md-block">
+                            <div class="card">
+                                <img src="images/Natural Paints/natural_paints_home.png" class="card-img-top" alt="Product 5" style="height: 200px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Natural Paints</h5>
+                                    <p>Experience the Beauty of Nature in Every Stroke with Natural Paints.</p>
+                                    <hr>
+                                    <div style="text-align: center;">
+                                        <a href="products.html" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Card 6 -->
+                        <div class="col-md-4 mb-4 d-none d-md-block">
+                            <div class="card">
+                                <img src="images/Kangiten Vedic Plaster/vedic_plaster_home.webp" class="card-img-top" alt="Product 6" style="height: 200px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Kangiten Vedic Plaster</h5>
+                                    <p>Elevate spaces with Kangiten Vedic Plaster, where harmony meets serenity in every layer and stroke.</p>
+                                    <hr>
+                                    <div style="text-align: center;">
+                                        <a href="products.html" class="btn btn-primary">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+
+    
+
+    <!--What makes us different section-->
+    <div class="container mt-5 searchable-section">
+        <h2 class="text-center mb-4">Discover the Difference</h2>
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-dollar-sign fa-3x mb-3" style="color: #e67817;"></i>
+                        <h3 class="card-title">Best Rates Guaranteed</h3>
+                        <p class="card-text">Unlock unparalleled value with our commitment to providing the best rates without compromising on quality.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-truck fa-3x mb-3" style="color: #e67817;"></i>
+                        <h3 class="card-title">Swift Deliveries</h3>
+                        <p class="card-text">Experience the convenience of nearby facilities and same-day delivery, ensuring your projects stay on track.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-shipping-fast fa-3x mb-3" style="color: #e67817;"></i>
+                        <h3 class="card-title">Comprehensive Logistics</h3>
+                        <p class="card-text">We go the extra mile by organizing seamless transport and skilled labor for site deliveries, prioritizing your convenience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-certificate fa-3x mb-3" style="color: #e67817;"></i>
+                        <h3 class="card-title">Certified Excellence</h3>
+                        <p class="card-text">Choose reliability backed by certification, ensuring both product integrity and correct application.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-handshake fa-3x mb-3" style="color: #e67817;"></i>
+                        <h3 class="card-title">Personalized Service</h3>
+                        <p class="card-text">Forge valued relationships as we engage personally, tailoring solutions to meet your unique needs.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <i class="fas fa-shopping-cart fa-3x mb-3" style="color: #e67817;"></i>
+                        <h3 class="card-title">Shop Online</h3>
+                        <p class="card-text">Explore our products. Purchase our premium cement sheets with just a WhatsApp message.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+
+
+
+
+    <!-- Footer Section -->
+    <!-- <hr class="mt-5"> -->
+    <footer class="widget-section searchable-section" style="background-color: #000000; color: #ffffff;">
+        <div class="container">
+            <br>
+            <div class="row">
+                <!-- Column 1: Our Brand, Follow Us -->
+                <div class="col-md-3" style="margin-left: 0px;">
+                    <!-- Our Brand Widget -->
+                    <div class="widget">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/icon.png" alt="Lalit Traders Logo" class="navbar-logo">
+                            LALIT TRADERS®
+                        </a>
+                        <br>
+                        <p>Discover quality and style with Lalit Traders.</p>
+                    </div>
+                    <!-- Follow Us Widget -->
+                    <div class="widget follow-us-icons">
+                        <h3>Follow Us</h3>
+                        <div class="d-flex justify-content-left">
+                            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="col-md-3" style="margin-left: 0px;">
+                    <!-- Quick Links Widget -->
+                    <div class="widget">
+                        <h3>Quick Links</h3>
+                        <a href="index.html">Home,</a>
+                        <a href="about_us.html">About Us,</a>
+                        <a href="products.html">Products,</a><br>
+                        <a href="contact_us.html">Contact Us,</a>
+                        <a href="faqs.html">FAQs</a>
+                    </div>
+                    <div class="widget">
+                        <a href="cancellation.html">Cancellation & Refund Policy</a><br>
+                        <a href="terms_and_conditions.html">Terms & Conditions</a><br>
+                        <a href="privacy_policy.html">Privacy Policy</a>
+                    </div>
+                </div>
+
+                <!-- Column 3: Get in Touch -->
+                <div class="col-md-3" style="margin-left: 0px;">
+                    <!-- Get in Touch Widget -->
+                    <div class="widget">
+                        <h3>Get in Touch</h3>
+                        <p><i class="fas fa-map-marker-alt"></i>  Reach us via <a href="https://www.google.com/maps/place/S.+No+25%2F1%2F1,+Lalit+Traders,+Dairy+Farm,+Bus+Stop,+beside+Raghunandan+Mangal+Karyalay,+Nimbalkar+Nagar,+Tathawade,+Pune,+Pimpri-Chinchwad,+Maharashtra+411033/@18.619915,73.7606306,15z/data=!4m6!3m5!1s0x3bc2b9c55c572d79:0x9ac39c1668781767!8m2!3d18.619915!4d73.7606306!16s%2Fg%2F11vrxn25cl" target="_blank"><u>Google Maps</u></a></p>
+                        <p><i class="fas fa-phone"></i><a href="tel:+919422521908">  +91-94225 21908</a></p>
+                        <p><i class="fas fa-phone"></i><a href="tel:+919158991908">  +91-91589 91908</a></p>
+                        <p><i class="far fa-envelope"></i><a href="mailto:lalittraders29@gmail.com">  lalittraders29@gmail.com</a></p>
+                    </div>
+                </div>
+                
+
+                <!-- Column 4: Just the Address -->
+                <div class="col-md-3" style="margin-left: 0px;">
+                    <div class="widget">
+                        <h3>Address</h3>
+                        <p>Plot No. 25/1/1<br>Raghunandan Mangal Karyalay Lane,<br>Dairy Farm Bus Stop,<br>Tathawade, Pune - 411033</p>
+                    </div>
+                    <div class="widget">
+                        <p>Timings : 10am to 6pm (Mon to Sat) </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            2024 Lalit Traders, All Rights Reserved
+        </div>
+    </footer>
+
+    <!-- Include Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        function searchFunction() {
+            var searchInput = document.getElementById('searchInput');
+            var searchKeyword = searchInput.value.toLowerCase();
+
+            // Check if the search input is empty
+            if (searchKeyword.trim() === '') {
+                alert('Please enter a keyword before searching.');
+                return;
+            }
+
+            // Check for sections with specific classes or identifiers
+            var sectionsToSearch = document.querySelectorAll('.searchable-section');
+            var found = false;
+
+            sectionsToSearch.forEach(function (section) {
+                var sectionContent = section.textContent.toLowerCase();
+
+                if (sectionContent.includes(searchKeyword)) {
+                    // Handle matching sections (e.g., highlight or navigate)
+                    section.style.backgroundColor = '#'; // Change the background color as an example
+
+                    // Scroll to the first matching section
+                    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                    found = true;
+                }
+            });
+
+            // Notify the user if no matches were found
+            if (!found) {
+                alert('No matching sections found for the entered keyword.');
+            }
+        }
+    </script>
+
+
+
+
+
+</body>
+
+</html>
