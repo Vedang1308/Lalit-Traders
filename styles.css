@@ -1,3 +1,9 @@
+        
+        .img-equal-size {
+            width: 100%;
+            height: 365px;
+        }
+        
         .orange-text {
             color: rgb(255, 255, 255);
         }
@@ -30,6 +36,8 @@
             top: 0;
             width: 100%;
             background-color: rgb(255, 255, 255);
+            /* background-image: url(images/bg.jpg);
+            background-size: cover; */
             z-index: 1000; /* Ensure the navbar is on top of other elements */
         }
         
@@ -37,6 +45,15 @@
         body {
             padding-top: 65px; /* Adjust the value based on your navbar's height */
             background-color:rgb(255, 255, 255);
+            /* background-image: url(images/bg.jpg);
+            background-size: cover; */
+            /* background-position: center; */
+        }
+
+        .card-body {
+            background-color: #ffffff;
+            /* background-image: url(images/bg.jpg);
+            background-size: cover; */
         }
 
         
@@ -56,17 +73,59 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.600);
+            background: rgba(0, 0, 0, 0.600); /* Adjusted overlay opacity */
         }
 
         .container.header-content {
             opacity: 0;
-            transform: translateY(10px);
-            animation: fadeInUp 0.5s ease-out forwards;
+            transform: translateY(20px) scale(0.95);
+            animation: fadeInUpBounce 0.8s ease-out forwards;
+        }
+
+        .container.header-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .container.header-content p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .container.header-content a.cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #e67817; /* Orange color */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .container.header-content a.cta-button:hover {
+            background-color: #e64a19; /* Darker orange on hover */
+        }
+
+        @keyframes fadeInUpBounce {
+            0% {
+                opacity: 0;
+                transform: translateY(20px) scale(0.95);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .page-header {
+                height: 450px;
+            }
         }
         
         /* Define the fade-in animation */
-        @keyframes fadeInUp {
+        /* @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(10px);
@@ -75,17 +134,17 @@
                 opacity: 1;
                 transform: translateY(0);
             }
-        }
+        } */
 
         .custom-img {
             height: 200px; /* Adjust the height as needed */
-            object-fit: cover;
+            object-fit: contain;
         }
 
         .page-header1 {
             position: relative;
             height: 300px;
-            background: url('images/contact_us_2.jpg') center/cover;
+            background: url('images/New/1.png') center/cover;
             display: flex;
             align-items: center;
             color: #fff;
@@ -104,7 +163,7 @@
         .page-header2 {
             position: relative;
             height: 300px;
-            background: url('images/about_us.jpg') center/cover;
+            background: url('images/New/7.png') center/cover;
             display: flex;
             align-items: center;
             color: #fff;
@@ -117,13 +176,13 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.400);
+            background: rgba(0, 0, 0, 0.600);
         }
 
         .page-header3 {
             position: relative;
             height: 300px;
-            background: url('images/our_products.png') center/cover;
+            background: url('images/New/1.png') center/cover;
             display: flex;
             align-items: center;
             color: #fff;
@@ -264,25 +323,25 @@
 
         /* Add your product details styles here */
         .product-details {
-            margin-top: -8px;
+            margin-top: -5px;
             margin-bottom: -300px;
         }
 
         .product-image {
             max-width: 100%;
-            height: 300px;
+            height: 270px;
             width: 1000px;
         }
 
         .product-image-container {
             position: relative;
             margin-bottom: 0;
-            max-height: 69%;
+            max-height: 70%;
             /* overflow-y: auto; */
         }
 
         .product-details-container {
-            max-height: 90%;
+            max-height: 87%;
             overflow-y: auto; /* Enable vertical scrolling */
             margin-bottom: 0;
             position: relative;
@@ -291,7 +350,7 @@
         .small-image-gallery {
             display: flex;
             overflow-x: auto; /* Enable horizontal scrolling */
-            margin-top: 10px;
+            margin-top: 25px;
         }
         
         .small-image {
@@ -307,13 +366,13 @@
 
         /* Add your product details styles here */
         .product-details2 {
-            margin-top: -8px;
+            margin-top: -5px;
             margin-bottom: -324px;
         }
 
         .product-image2 {
             max-width: 100%;
-            height: 300px;
+            height: 270px;
             width: 1000px;
         }
 
@@ -325,7 +384,7 @@
         }
 
         .product-details-container2 {
-            max-height: 89%;
+            max-height: 87%;
             overflow-y: auto; /* Enable vertical scrolling */
             margin-bottom: 0;
             position: relative;
@@ -334,7 +393,7 @@
         .small-image-gallery2 {
             display: flex;
             overflow-x: auto; /* Enable horizontal scrolling */
-            margin-top: 10px;
+            margin-top: 27px;
         }
         
         .small-image2 {
@@ -350,7 +409,7 @@
 
         /* Add your product details styles here */
         .product-details3 {
-            margin-top: -8px;
+            margin-top: -5px;
             margin-bottom: -172px;
         }
 
@@ -394,13 +453,13 @@
 
         /* Add your product details styles here */
         .product-details4 {
-            margin-top: -8px;
+            margin-top: -5px;
             margin-bottom: -244px;
         }
 
         .product-image4 {
             max-width: 100%;
-            height: 300px;
+            height: 270px;
             width: 1000px;
         }
 
@@ -412,7 +471,7 @@
         }
 
         .product-details-container4 {
-            max-height: 89%;
+            max-height: 87%;
             overflow-y: auto; /* Enable vertical scrolling */
             margin-bottom: 0;
             position: relative;
@@ -421,7 +480,7 @@
         .small-image-gallery4 {
             display: flex;
             overflow-x: auto; /* Enable horizontal scrolling */
-            margin-top: 10px;
+            margin-top: 27px;
         }
         
         .small-image4 {
@@ -437,13 +496,13 @@
 
         /* Add your product details styles here */
         .product-details5 {
-            margin-top: -8px;
+            margin-top: -5px;
             margin-bottom: -292px;
         }
 
         .product-image5 {
             max-width: 100%;
-            height: 300px;
+            height: 270px;
             width: 1000px;
         }
 
@@ -455,7 +514,7 @@
         }
 
         .product-details-container5 {
-            max-height: 93%;
+            max-height: 87%;
             overflow-y: auto; /* Enable vertical scrolling */
             margin-bottom: 0;
             position: relative;
@@ -464,12 +523,12 @@
         .small-image-gallery5 {
             display: flex;
             overflow-x: auto; /* Enable horizontal scrolling */
-            margin-top: 10px;
+            margin-top: 27px;
         }
         
         .small-image5 {
             max-width: 80px; /* Set a fixed width for small images */
-            height: auto;
+            height: 60px;
             margin-right: 10px; /* Adjust spacing between small images */
             cursor: pointer;
         }
@@ -518,5 +577,47 @@
         }
         
         .small-image.active6 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        /* Add your product details styles here */
+        .product-details7 {
+            margin-top: -8px;
+            margin-bottom: -39px;
+        }
+
+        .product-image7 {
+            max-width: 100%;
+            height: 300px;
+            width: 1000px;
+        }
+
+        .product-image-container7 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 85%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container7 {
+            max-height: 89%;
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery7 {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image7 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: 60px;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active7 {
             border: 2px solid #007bff; /* Change border color as needed */
         }
