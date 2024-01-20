@@ -60,7 +60,8 @@
         .page-header {
             position: relative;
             height: 600px;
-            background: url('images/homepage.webp') center/cover;
+            background: url('images/homepage.png') center/cover;
+            background-size: cover;
             display: flex;
             align-items: center;
             color: #fff;
@@ -144,7 +145,7 @@
         .page-header1 {
             position: relative;
             height: 300px;
-            background: url('images/New/1.png') center/cover;
+            background: url('images/contact_us_3.png') center/cover;
             display: flex;
             align-items: center;
             color: #fff;
