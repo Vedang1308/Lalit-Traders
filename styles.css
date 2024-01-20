@@ -36,8 +36,8 @@
             top: 0;
             width: 100%;
             background-color: rgb(255, 255, 255);
-            /* background-image: url(images/bg.jpg);
-            background-size: cover; */
+            background-image: url(images/bg.jpg);
+            background-size: cover;
             z-index: 1000; /* Ensure the navbar is on top of other elements */
         }
         
@@ -45,15 +45,15 @@
         body {
             padding-top: 65px; /* Adjust the value based on your navbar's height */
             background-color:rgb(255, 255, 255);
-            /* background-image: url(images/bg.jpg);
-            background-size: cover; */
-            /* background-position: center; */
+            background-image: url(images/bg.jpg);
+            background-size: cover;
+            background-position: center;
         }
 
         .card-body {
             background-color: #ffffff;
-            /* background-image: url(images/bg.jpg);
-            background-size: cover; */
+            background-image: url(images/bg.jpg);
+            background-size: cover;
         }
 
         
