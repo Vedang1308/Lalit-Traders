@@ -19,10 +19,42 @@
 <body>
 
     <!-- Add the chat bubble here -->
-    <div class="col-md-6">
-        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-        <div class="elfsight-app-b997a4c7-e568-4a4c-a933-82143ef6ad26" data-elfsight-app-lazy></div>
-    </div>
+    <style type="text/css">
+        #okapi-wasb-button{
+            position: fixed;
+            z-index: 9999999;
+        }
+            #okapi-wasb-button{
+                bottom: 15px;
+                right: 15px;
+            }
+        #okapi-wasb-icon{
+            opacity: 0.95;
+            width: 60px;
+            height: 60px;
+        }
+        #okapi-wasb-icon:hover{
+            opacity: 1;
+        }
+        @media only screen and (min-width: 320px){
+            #okapi-wasb-button{
+                            display: block;
+                    }
+        }
+        @media only screen and (min-width: 768px){
+            #okapi-wasb-button{
+                            display: block;
+                    }	    
+        }
+        @media only screen and (min-width: 992px){
+            #okapi-wasb-button{
+                            display: block;
+                    }
+        }
+        </style>
+    <a href="https://wa.me/919422521908?text=Hey" id="okapi-wasb-button" target="_blank">
+        <img id="okapi-wasb-icon" src="images/default.png" alt="Lalit Traders WhatsApp Chat" height="128" width="128">
+    </a>
     <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
