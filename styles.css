@@ -953,6 +953,13 @@
                 margin-right: 10px; /* Adjust spacing between small images */
                 cursor: pointer;
                 }
+
+            .product-details-container11 {
+                max-height: 93.5%;
+                /*overflow-y: auto;*/ /* Enable vertical scrolling */
+                margin-bottom: 200px;
+                position: relative;
+            }
         }
 
 
@@ -972,13 +979,13 @@
 
         .product-image-container12 {
             position: relative;
-            margin-bottom: -102px;
+            margin-bottom: 0px;
             max-height: 69%;
             /* overflow-y: auto; */
         }
 
         .product-details-container12 {
-            max-height: 87%;
+            max-height: 82.5%;
             overflow-y: auto; /* Enable vertical scrolling */
             margin-bottom: -102px;
             position: relative;
