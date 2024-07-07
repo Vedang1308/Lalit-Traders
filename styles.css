@@ -183,7 +183,7 @@
         .page-header3 {
             position: relative;
             height: 300px;
-            background: url('images/New/1.png') center/cover;
+            background: url('images/New/2.jpg') center/cover;
             display: flex;
             align-items: center;
             color: #fff;
@@ -191,6 +191,63 @@
         }
 
         .header-overlay3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.500);
+        }
+
+        .page-header4 {
+            position: relative;
+            height: 300px;
+            background: url('images/water_tank_header.jpeg') center/cover;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-align: left;
+        }
+
+        .header-overlay4 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.500);
+        }
+
+        .page-header5 {
+            position: relative;
+            height: 300px;
+            background: url('images/New/3.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-align: left;
+        }
+
+        .header-overlay5 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.500);
+        }
+
+        .page-header6 {
+            position: relative;
+            height: 300px;
+            background: url('images/pipes_header.jpg') center/cover;
+            display: flex;
+            align-items: center;
+            color: #fff;
+            text-align: left;
+        }
+
+        .header-overlay6 {
             position: absolute;
             top: 0;
             left: 0;
@@ -679,6 +736,273 @@
 
         @media screen and (max-width: 767px) {
             .small-image7 {
+                max-width: 80px; /* Set a fixed width for small images */
+                height: 60px;
+                margin-right: 10px; /* Adjust spacing between small images */
+                cursor: pointer;
+                }
+        }
+
+        /* Add your product details styles here */
+        .product-details8 {
+            margin-top: -8px;
+            margin-bottom: -39px;
+        }
+
+        .product-image8 {
+            max-width: 100%;
+            height: 390px;
+            width: 1000px;
+            border-radius: 3%;
+        }
+
+        .product-image-container8 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 85%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container8 {
+            max-height: 89%;
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery8 {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image8 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: 60px;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active8 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        @media screen and (max-width: 767px) {
+            .small-image8 {
+                max-width: 80px; /* Set a fixed width for small images */
+                height: 60px;
+                margin-right: 10px; /* Adjust spacing between small images */
+                cursor: pointer;
+                }
+        }
+
+        /* Add your product details styles here */
+        .product-details9 {
+            margin-top: -8px;
+            margin-bottom: -39px;
+        }
+
+        .product-image9 {
+            max-width: 100%;
+            height: 390px;
+            width: 1000px;
+            border-radius: 3%;
+        }
+
+        .product-image-container9 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 85%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container9 {
+            max-height: 89%;
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery9 {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image9 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: 60px;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active9 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        @media screen and (max-width: 767px) {
+            .small-image9 {
+                max-width: 80px; /* Set a fixed width for small images */
+                height: 60px;
+                margin-right: 10px; /* Adjust spacing between small images */
+                cursor: pointer;
+                }
+        }
+
+        /* Add your product details styles here */
+        .product-details10 {
+            margin-top: -8px;
+            margin-bottom: -39px;
+        }
+
+        .product-image10 {
+            max-width: 100%;
+            height: 380px;
+            width: 1000px;
+            border-radius: 3%;
+        }
+
+        .product-image-container10 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 85%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container10 {
+            max-height: 100%;
+            /*overflow-y: auto;*/ /* Enable vertical scrolling */
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery10 {
+            display: flex;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image10 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: 60px;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active10 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        @media screen and (max-width: 767px) {
+            .small-image10 {
+                max-width: 80px; /* Set a fixed width for small images */
+                height: 60px;
+                margin-right: 10px; /* Adjust spacing between small images */
+                cursor: pointer;
+                }
+        }
+
+
+
+        /* Add your product details styles here */
+        .product-details11 {
+            margin-top: -5px;
+            margin-bottom: -172px;
+        }
+
+        .product-image11 {
+            max-width: 100%;
+            height: 390px;
+            width: 1000px;
+            border-radius: 3%;
+        }
+
+        .product-image-container11 {
+            position: relative;
+            margin-bottom: 0;
+            max-height: 69%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container11 {
+            max-height: 93.5%;
+            /*overflow-y: auto;*/ /* Enable vertical scrolling */
+            margin-bottom: 0;
+            position: relative;
+        }
+
+        .small-image-gallery11 {
+            display: flex;
+            /*overflow-x: auto;*/ /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image11 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: 60px;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active11 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        @media screen and (max-width: 767px) {
+            .small-image11 {
+                max-width: 80px; /* Set a fixed width for small images */
+                height: 60px;
+                margin-right: 10px; /* Adjust spacing between small images */
+                cursor: pointer;
+                }
+        }
+
+
+
+        /* Add your product details styles here */
+        .product-details12 {
+            margin-top: -5px;
+            margin-bottom: -172px;
+        }
+
+        .product-image12 {
+            max-width: 100%;
+            height: 390px;
+            width: 1000px;
+            border-radius: 3%;
+        }
+
+        .product-image-container12 {
+            position: relative;
+            margin-bottom: -102px;
+            max-height: 69%;
+            /* overflow-y: auto; */
+        }
+
+        .product-details-container12 {
+            max-height: 87%;
+            overflow-y: auto; /* Enable vertical scrolling */
+            margin-bottom: -102px;
+            position: relative;
+        }
+
+        .small-image-gallery12 {
+            display: flex;
+            /*overflow-x: auto;*/ /* Enable horizontal scrolling */
+            margin-top: 10px;
+        }
+        
+        .small-image12 {
+            max-width: 80px; /* Set a fixed width for small images */
+            height: 60px;
+            margin-right: 10px; /* Adjust spacing between small images */
+            cursor: pointer;
+        }
+        
+        .small-image.active12 {
+            border: 2px solid #007bff; /* Change border color as needed */
+        }
+
+        @media screen and (max-width: 767px) {
+            .small-image12 {
                 max-width: 80px; /* Set a fixed width for small images */
                 height: 60px;
                 margin-right: 10px; /* Adjust spacing between small images */
